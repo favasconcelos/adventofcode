@@ -55,7 +55,7 @@ const fs = require('fs');
 const path = require('path');
 
 function readInput() {
-    const filePath = path.resolve(__dirname, '2.1.input');
+    const filePath = path.resolve(__dirname, '2.input');
     return fs.readFileSync(filePath, { encoding: 'utf8' });
 }
 

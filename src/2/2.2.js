@@ -30,7 +30,7 @@ const path = require('path');
 const EXPECTED_OUTPUT = 19690720;
 
 function readInput() {
-    const filePath = path.resolve(__dirname, '2.1.input');
+    const filePath = path.resolve(__dirname, '2.input');
     return fs.readFileSync(filePath, { encoding: 'utf8' });
 }
 
