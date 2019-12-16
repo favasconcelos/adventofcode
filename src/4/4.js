@@ -18,12 +18,11 @@ How many different passwords within the range given in your puzzle input meet th
 To play, please identify yourself via one of these services:
 */
 
-
 function checkFoDoubleAndDecreasing(input) {
-    let array = input.split('');
+    const array = input.split('');
     let checkForDecreasing = true;
     let checkDouble = true;
-    let checkDoubleObj = { key: null, count: 0 };
+    const checkDoubleObj = { key: null, count: 0 };
 
     for (let index = 0; index < array.length; index++) {
         const current = array[index];
@@ -53,7 +52,6 @@ function checkFoDoubleAndDecreasing(input) {
     return checkForDecreasing && checkDouble;
 }
 
-
 function main() {
     const results = [];
     const fails = [];
@@ -70,8 +68,7 @@ function main() {
     // console.log(JSON.stringify(results, null, 0));
     // console.log(JSON.stringify(fails, null, 0));
     const total = results.length + fails.length;
-    console.log(`[${results.length}][${fails.length}][${total}][${(end - init + 1)}]`);
+    console.log(`[${results.length}][${fails.length}][${total}][${end - init + 1}]`);
 }
-
 
 module.exports = main();

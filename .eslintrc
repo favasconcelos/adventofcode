@@ -1,0 +1,38 @@
+{
+    "extends": ["eslint:recommended", "google"],
+    "plugins": ["import"],
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": false
+        }
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            {
+                "code": 180,
+                "tabWidth": 4
+            }
+        ],
+        "arrow-parens": ["error", "as-needed"],
+        "indent": ["error", 4],
+        "no-unused-vars": [
+            "error",
+            { "vars": "all", "args": "all", "argsIgnorePattern": "^_", "ignoreRestSiblings": false, "caughtErrors": "all", "caughtErrorsIgnorePattern": "^ignore" }
+        ],
+        "import/no-unresolved": "warn",
+        "no-console": "off",
+        "new-cap": "off",
+        "object-curly-spacing": "off",
+        "space-before-function-paren": "off",
+        "valid-jsdoc": "off",
+        "require-jsdoc": "off"
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "mocha": true
+    }
+}
