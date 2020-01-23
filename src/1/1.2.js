@@ -29,7 +29,7 @@ const fs = require('fs');
 const path = require('path');
 
 function readInput() {
-    const filePath = path.resolve(__dirname, '1.2.input');
+    const filePath = path.resolve(__dirname, '1.input');
     return fs.readFileSync(filePath, { encoding: 'utf8' });
 }
 

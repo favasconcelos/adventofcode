@@ -1,10 +1,9 @@
 {
     "name": "adventofcode",
     "version": "1.0.0",
-    "main": "index.js",
     "license": "MIT",
     "devDependencies": {
-        "eslint": "6.7.2",
+        "eslint": "6.8.0",
         "eslint-config-google": "0.14.0",
         "eslint-plugin-import": "2.20.0",
         "husky": "4.2.1",
